@@ -1,0 +1,32 @@
+.btn {
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-white {
+    color: black;
+    background-color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+.btn-white {
+    color: white;
+    background-color: #555;
+}
+
+iframe {
+    border-radius: 10px;
+    float: left;
+    max-width: 80%;
+}
