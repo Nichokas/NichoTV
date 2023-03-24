@@ -5,3 +5,5 @@ function redirectToLaLiga() { window.location.href = "https://nichokas.github.io
 function redirectTomtv() { window.location.href = "https://nichokas.github.io/NichoTV/ver/mtv/"; }
 
 function redirectToNG() { window.location.href = "https://nichokas.github.io/NichoTV/ver/natgeo/"; }
+
+function redirectToUC() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
