@@ -6,4 +6,12 @@ function redirectTomtv() { window.location.href = "https://nichokas.github.io/Ni
 
 function redirectToNG() { window.location.href = "https://nichokas.github.io/NichoTV/ver/natgeo/"; }
 
-function redirectToUC() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
+function redirectToUCo() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcomedy/"; }
+
+function redirectToUCr() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcrime/"; }
+
+function redirectToUCi() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
+
+function redirectToUWB() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
+
+function redirectToUHBO() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
