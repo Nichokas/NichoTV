@@ -12,6 +12,6 @@ function redirectToUCr() { window.location.href = "https://nichokas.github.io/Ni
 
 function redirectToUCi() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
 
-function redirectToUWB() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
+function redirectToUWB() { window.location.href = "https://nichokas.github.io/NichoTV/ver/wb/"; }
 
-function redirectToUHBO() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
+function redirectToUHBO() { window.location.href = "https://nichokas.github.io/NichoTV/ver/hbo/"; }
