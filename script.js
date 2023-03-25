@@ -6,6 +6,8 @@ function redirectTomtv() { window.location.href = "https://nichokas.github.io/Ni
 
 function redirectTomtvhits() { window.location.href = "https://nichokas.github.io/NichoTV/ver/mtvhits/"; }
 
+
+
 function redirectToNG() { window.location.href = "https://nichokas.github.io/NichoTV/ver/natgeo/"; }
 
 function redirectToUCo() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcomedy/"; }
