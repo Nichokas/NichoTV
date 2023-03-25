@@ -57,3 +57,9 @@ body {
 .border:hover {
   border: 2px solid #fff;
 }
+
+.long-square {
+  width: 35%; /* Cambia esto para ajustar el tamaño del cuadrado largo */
+  padding-bottom: 2%; /* Hace que la altura sea igual al ancho */
+  background-color: rgba(0, 0, 0, 0.1); /* Añade un fondo semitransparente */
+}
