@@ -12,9 +12,11 @@ function redirectToUCr() { window.location.href = "https://nichokas.github.io/Ni
 
 function redirectToUCi() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcinema/"; }
 
-function redirectToUWB() { window.location.href = "https://nichokas.github.io/NichoTV/ver/wb/"; }
+function redirectToWB() { window.location.href = "https://nichokas.github.io/NichoTV/ver/wb/"; }
 
-function redirectToUHBO() { window.location.href = "https://nichokas.github.io/NichoTV/ver/hbo/"; }
+function redirectToHBO() { window.location.href = "https://nichokas.github.io/NichoTV/ver/hbo/"; }
+
+function redirectToU() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universal/"; }
 
 function openMovistar() {
   window.open("https://tv.movistar.com.ar/tv-guide/epg");
