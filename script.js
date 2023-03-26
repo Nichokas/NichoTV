@@ -1,3 +1,8 @@
+  window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+    cronitor('config', { clientKey: '6a88f88b1c577341fca211e79dd01e49' });
+
+
+
 function redirectToF1() { window.location.href = "https://nichokas.github.io/NichoTV/ver/F1/"; }
 
 function redirectToLaLiga() { window.location.href = "https://nichokas.github.io/NichoTV/ver/LaLiga/"; }
@@ -29,11 +34,3 @@ function redirectTonick() { window.location.href = "https://nichokas.github.io/N
 function openMovistar() {
   window.open("https://tv.movistar.com.ar/tv-guide/epg");
 }
-
-
-
-
-
-async src="https://rum.cronitor.io/script.js
-  window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
-    cronitor('config', { clientKey: '6a88f88b1c577341fca211e79dd01e49' });
