@@ -6,8 +6,6 @@ function redirectTomtv() { window.location.href = "https://nichokas.github.io/Ni
 
 function redirectTomtvhits() { window.location.href = "https://nichokas.github.io/NichoTV/ver/mtvhits/"; }
 
-
-
 function redirectToNG() { window.location.href = "https://nichokas.github.io/NichoTV/ver/natgeo/"; }
 
 function redirectToUCo() { window.location.href = "https://nichokas.github.io/NichoTV/ver/universalcomedy/"; }
@@ -31,3 +29,11 @@ function redirectTonick() { window.location.href = "https://nichokas.github.io/N
 function openMovistar() {
   window.open("https://tv.movistar.com.ar/tv-guide/epg");
 }
+
+
+
+
+
+async src="https://rum.cronitor.io/script.js
+  window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
+    cronitor('config', { clientKey: '6a88f88b1c577341fca211e79dd01e49' });
