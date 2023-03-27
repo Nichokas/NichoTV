@@ -32,5 +32,5 @@ function redirectToHBOfam() { window.location.href = "https://nichotv.pages.dev/
 function redirectTonick() { window.location.href = "https://nichotv.pages.dev/ver/nick/"; }
 
 function openMovistar() {
-  window.open("https://tv.movistar.com.ar/tv-guide/epg");
+  window.open("https://www.directv.com.ar/guia/guia.aspx");
 }
