@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html style="height: 100%" lang="en">
+<head>
+<!-- DON'T EDIT THE FOLLOWING LINE -->
+<!-- If you want to override the localised wording, you can do it in a scriptlet here -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaLiga mantenimiento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<style type="text/css">
+/* FOR EASY CUSTOMISATION EDIT THIS
+First upload your favicon.png and banner.png (no more than 250px tall please) using the Files button.  */
+:root {
+  --page-background: rgb(79, 34, 34);
+  --banner-background: rgb(0, 0, 0);
+  --textbox-background: rgb(255, 255, 255);
+
+  --progress-outer-fade-color: rgba(255, 0, 0, 0.8);
+  --progress-border-color: rgb(204,204,204);
+  --progress-inner-color1: rgb(255, 0, 0);
+  --progress-inner-color2: rgba(255, 0, 0, 0.3);
+
+  --banner: url(%% filesPath %%/banner.png);
+  --banner-height: 150px;
+  --banner-border-color: rgb(204,204,204);
+  --banner-textbox-divider-color: rgba(255,255,255,0);
+  --textbox-border-color: rgb(204,204,204);
+  --corner-radius: 20px;
+
+  --text-color: rgb(68, 68, 68);
+  --text-font: Montserrat;
+  --link-color: rgb(102,102,102);
+}
+/*
+END EASY CUSTOMISATION
+You can also EDIT the styles below, but please don't DELETE or RENAME them.
+You can also ADD more styles if you need.
+*/
+.message {
+  background-color: #FFFDD0;
+    box-shadow: rgba(0,0,0,0.2) 0px 9px 19px 0px;
+    border: 2px solid grey;
+    border-radius: var(--corner-radius);
+    padding: 10px;
+}
+.banner-image {
+  background-image: url('/img/nichotv x laliga.png');
+  width: auto;
+  height: var(--banner-height);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body {
+  background: var(--page-background) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container { position: relative; height: 100%; }
+a { color: var(--link-color); font-weight: bold; }
+.flags { position: absolute; top: 8px; right: 12px; }
+.flags img { width: 32px; height: 24px; border-radius: 3px }
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 550px;
+  border-radius: var(--corner-radius);
+  background: white;
+}
+.mainbox {
+  background: var(--textbox-background);
+  box-shadow: rgba(0,0,0,0.2) 0px 18px 38px 0px;
+  text-align: center;
+  font-family: var(--text-font), sans-serif;
+  color: var(--text-color);
+}
+.lower {
+  border-radius: 0px 0px var(--corner-radius) var(--corner-radius);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--textbox-border-color);
+  border-top: 1px solid var(--banner-textbox-divider-color);
+}
+.upper {
+  background: var(--banner-background);
+  border-radius: var(--corner-radius) var(--corner-radius) 0px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--banner-border-color);
+  border-bottom: 1px solid var(--banner-textbox-divider-color);
+}
+.margintb { margin: 16px 0px 16px 0px; }
+.marginnob { margin-bottom: 0px !important}
+.smaller {font-size: smaller}
+.nox { font-size: 1.4em }
+.estwait { padding-top: 20px; font-size: 1.2em}
+#aheadNumber { font-size: 1.8em; font-variant-numeric: tabular-nums }
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
+@media screen and (max-width: 991px) {
+  .mainbox { font-size: 0.8em; }
+  .nox { font-size: 1.2em; }
+  .estwait { padding-top: 5px; }
+  .banner-image { height: 100px; }
+  .sm-padding { padding-left: 15px !important; padding-right: 15px !important; }
+}
+.progressOuter {
+  border: 2px solid var(--progress-border-color);
+  width: auto;
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--progress-outer-fade-color) 0px 0px 10px 3px;
+  background-color: white;
+}
+.progressInner {
+  background-image: linear-gradient(to right, var(--progress-inner-color1),var(--progress-inner-color2), var(--progress-inner-color1),var(--progress-inner-color2));
+  background-size: 300% 300%;
+  width: %% progress %%%;
+  min-width: 5px;
+  transition: width 2s;
+  height: 30px;
+  border-radius: 7px 5px 5px 7px;
+  border: 1px var(--progress-border-color) solid;
+  -webkit-animation: proganim 5s linear infinite;
+  -moz-animation: proganim 5s linear infinite;
+  animation: proganim 5s linear infinite;
+}
+@-webkit-keyframes proganim { 0%{background-position:100% 50%} 100%{background-position:0% 50%} }
+@-moz-keyframes proganim { 0%{background-position:100% 50%} 100%{background-position:0% 50%} }
+@keyframes proganim { 0%{background-position:100% 50%} 100%{background-position:0% 50%} }
+</style> 
+</head>
+<!-- You MUST keep the call to loaded() but you can add additional onLoad listeners -->
+  <div class="container">
+    <div class="center">
+      <div class="mainbox upper sm-padding" id="upper">
+        <div class="banner banner-image" id="banner" aria-label="Banner Image"></div>
+      </div>
+      <div class="mainbox lower sm-padding">
+        <p class="nox" id="first-para">Ahora estas en la sala de espera de LaLiga</p>
+        <p>Lo enviaremos al sitio tan pronto como sea posible.</p>
+        <p class="nox estwait">
+          <!-- Please do NOT change or delete the span id below -->
+Mantenimiento en progreso</b>.</span>
+        </p>
+        <!-- Please do NOT change or delete the div ids below -->
+        <div id="progressOuter" class="progressOuter" aria-label="Progress Bar">
+          <div class="progressInner" id="progress"></div>
+        </div>
+        <p class="ahead">
+          <!-- Please do NOT change or delete the span id below -->
+        </p>
+        <p>
+          <script>
+            document.write("Esta página se actualiza automáticamente cada pocos segundos.<br> No es necesario actualizar esta página.");
+            setInterval(function() {
+location.reload();
+}, 25500);
+          </script>
+          <noscript>
+Debido a que su navegador no admite javascript, deberá actualizar esta página una vez que sea su turno, o para verificar su progreso. Para actualizar, pulse Ctrl-R en Windows, Opciones-R en Mac o arrastre desde la parte superior de la página en iPads o teléfonos móviles.
+          </noscript>
+        </p>
+        <p class="smaller">
+          <!-- Including the beneficial link to Queue-Fair below reinforces visitor perception of fairness
+               and helps stop your site crashing because of visitors coming to your site to ask questions
+               about the queue.  It is also part of our standard Contract Terms that the link is shown.
+               Please do NOT delete it or remove the word Queue-Fair, but you CAN edit the "Powered by"
+               text and you CAN add "and %% accountDisplay %%" to the Powered by message - we love that! -->
+
+        </p>
+      </div>
+    </div>
+    <!-- Please do NOT delete the util div below -->
+  </div>
+</body>
+</html>
