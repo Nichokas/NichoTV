@@ -6,10 +6,12 @@
   margin-top: 50px;
 }
 
-
 body {
   background-color: #1c1c1c;
   color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .square {
@@ -59,7 +61,7 @@ body {
 }
 
 .long-square {
-  width: 35%; /* Cambia esto para ajustar el tamaño del cuadrado largo */
-  padding-bottom: 2%; /* Hace que la altura sea igual al ancho */
-  background-color: rgba(0, 0, 0, 0.1); /* Añade un fondo semitransparente */
+  width: 35%;
+  padding-bottom: 2%;
+ background-color: rgba(0, 0, 0, 0.1);
 }
