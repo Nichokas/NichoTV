@@ -8,3 +8,13 @@ function redirectTo(channel) {
 function openMovistar() {
   window.open("https://www.directv.com.ar/guia/guia.aspx");
 }
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+      console.log('Service Worker registrado con éxito con el alcance: ', registration.scope);
+    }, function(err) {
+      console.log('El registro del Service Worker falló: ', err);
+    });
+  });
+}
